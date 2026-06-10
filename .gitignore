@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+.env
+.venv/
+
+# VS Code
+.vscode/
+
+# Generated datasets / outputs
+wav2vec2_outputs/
+human_annotations/
+
+# Large data folders
+data/audio/
+data/transcripts/
+
+# Generated reports
+*.csv
+*.json
+cleaned.txt
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Model files
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.safetensors
+
+# Temporary files
+*.tmp
+*.temp
