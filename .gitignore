@@ -18,6 +18,7 @@ human_annotations/
 # Large data folders
 data/audio/
 data/transcripts/
+data/
 
 # Generated reports
 *.csv
