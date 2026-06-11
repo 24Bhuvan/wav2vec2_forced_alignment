@@ -7,7 +7,7 @@ from pathlib import Path
 # =====================================================
 
 HUMAN_DIR = Path("human_annotations")
-WAV2VEC_DIR = Path("wav2vec2_outputs")
+WAV2VEC_DIR = Path("wav2vec2_model2_outputs")
 
 THRESHOLD_MS = 70
 THRESHOLD_SEC = THRESHOLD_MS / 1000.0
@@ -186,7 +186,7 @@ summary = {
     "matching_words_evaluated": total_matching_words
 }
 
-with open("summary.json", "w", encoding="utf-8") as f:
+with open("summary2.json", "w", encoding="utf-8") as f:
     json.dump(summary, f, indent=4)
 
 with open("red_flag_files.csv", "w", newline="", encoding="utf-8") as f:
@@ -209,5 +209,4 @@ print(f"Words > 70 ms        : {flagged_words}")
 print(f"Percentage flagged   : {percentage:.2f}%")
 print(f"Mean Start Error     : {mean_start_error_ms:.2f} ms")
 print(f"Mean End Error       : {mean_end_error_ms:.2f} ms")
-print(f"Mean Combined Error  : {mean_combined_error_ms:.2f} ms")
 print("=" * 50)
