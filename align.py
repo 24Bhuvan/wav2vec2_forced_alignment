@@ -20,7 +20,7 @@ except ImportError:
 
 AUDIO_DIR = Path("data/wav")
 TRANSCRIPT_DIR = Path("data/transcripts")
-OUTPUT_DIR = Path("wav2vec2_model2_outputs")
+OUTPUT_DIR = Path("wav2vec2_outputs")
 
 OUTPUT_DIR.mkdir(exist_ok=True)
 
