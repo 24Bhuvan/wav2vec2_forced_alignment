@@ -8,7 +8,7 @@ PROJECT_ROOT = Path(__file__).parent
 
 ANNOTATION_DIR = PROJECT_ROOT / "human_annotations"
 TRANSCRIPT_DIR = PROJECT_ROOT / "data" / "transcripts"
-AUDIO_DIR = PROJECT_ROOT / "data" / "audio"
+AUDIO_DIR = PROJECT_ROOT / "data" / "wav"
 
 REPORT_FILE = PROJECT_ROOT / "cleaned.txt"
 
