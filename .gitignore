@@ -19,6 +19,7 @@ human_annotations/
 data/audio/
 data/transcripts/
 data/
+audacity_formated/
 
 # Generated reports
 *.csv
