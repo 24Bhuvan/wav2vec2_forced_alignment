@@ -57,7 +57,7 @@ def normalize_text(text: str):
     text = text.lower()
 
     text = re.sub(
-        r"[^a-z\s]",
+        r"[^a-z'\s]",
         "",
         text
     )
