@@ -6,10 +6,10 @@ from pathlib import Path
 # CONFIG
 # =====================================================
 
-HUMAN_DIR = Path("human_annotations")
+HUMAN_DIR = Path("data/human_annotations")
 WAV2VEC_DIR = Path("wav2vec2_outputs")
 
-THRESHOLD_MS = 70
+THRESHOLD_MS = 90
 THRESHOLD_SEC = THRESHOLD_MS / 1000.0
 
 # =====================================================
@@ -205,7 +205,7 @@ print("\n" + "=" * 50)
 print(f"Files compared       : {total_files}")
 print(f"Red flag files       : {red_flag_files}")
 print(f"Total words          : {total_words}")
-print(f"Words > 70 ms        : {flagged_words}")
+print(f"Words > 90 ms        : {flagged_words}")
 print(f"Percentage flagged   : {percentage:.2f}%")
 print(f"Mean Start Error     : {mean_start_error_ms:.2f} ms")
 print(f"Mean End Error       : {mean_end_error_ms:.2f} ms")
