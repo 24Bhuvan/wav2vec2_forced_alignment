@@ -2,11 +2,11 @@ import json
 from pathlib import Path
 
 # Folder containing JSON files
-INPUT_DIR = Path("wav2vec2_outputs")
+INPUT_DIR = Path("outputs/alignments")
 
 # Folder to save TXT annotation files
-OUTPUT_DIR = Path("audacity_formated")
-OUTPUT_DIR.mkdir(exist_ok=True)
+OUTPUT_DIR = Path("outputs/annotations")
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 json_files = sorted(INPUT_DIR.glob("*.json"))
 
