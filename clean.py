@@ -6,11 +6,11 @@ from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).parent
 
-ANNOTATION_DIR = PROJECT_ROOT / "human_annotations"
+ANNOTATION_DIR = PROJECT_ROOT / "data" / "annotations"
 TRANSCRIPT_DIR = PROJECT_ROOT / "data" / "transcripts"
-AUDIO_DIR = PROJECT_ROOT / "data" / "wav"
+AUDIO_DIR = PROJECT_ROOT / "data" / "audio"
 
-REPORT_FILE = PROJECT_ROOT / "cleaned.txt"
+REPORT_FILE = PROJECT_ROOT / "outputs" / "cleaning_reports" / "cleaned_files.txt"
 
 # =====================================================
 # STATS
