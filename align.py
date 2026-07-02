@@ -18,9 +18,9 @@ except ImportError:
 # CONFIG
 # =====================================================
 
-AUDIO_DIR = Path("data/wav")
+AUDIO_DIR = Path("data/audio")
 TRANSCRIPT_DIR = Path("data/transcripts")
-OUTPUT_DIR = Path("wav2vec2_outputs")
+OUTPUT_DIR = Path("outputs/alignments")
 
 OUTPUT_DIR.mkdir(exist_ok=True)
 
