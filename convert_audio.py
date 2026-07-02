@@ -1,8 +1,8 @@
 from pathlib import Path
 import subprocess
 
-input_folder = Path(r"data/audio")
-output_folder = Path(r"data/wav")
+input_folder = Path(r"data/datasets")
+output_folder = Path(r"data/audio")
 
 output_folder.mkdir(parents=True, exist_ok=True)
 
@@ -14,7 +14,7 @@ for i, mp3_file in enumerate(mp3_files, start=1):
     cmd = [
         "ffmpeg",
         "-y",
-        "-i", str(mp3_file),
+        "-i", str(mp3_file), 
         "-ac", "1",      # mono
         "-ar", "16000",  # 16 kHz
         str(wav_file)
