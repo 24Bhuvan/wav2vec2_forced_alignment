@@ -1,45 +1,35 @@
 # Python
 __pycache__/
 *.py[cod]
-*$py.class
 
 # Virtual Environment
 venv/
-.env
 .venv/
+.env
 
 # VS Code
 .vscode/
 
-# Generated datasets / outputs
-wav2vec2_outputs/
-human_annotations/
-
-# Large data folders
-data/audio/
-data/transcripts/
+# Data
 data/
-audacity_formated/
 
-# Generated reports
-*.csv
-*.json
-cleaned.txt
+# Outputs
+outputs/
 
-# OS files
+# OS
 .DS_Store
 Thumbs.db
 
 # Logs
 *.log
 
-# Model files
+# Model Files
 *.pt
 *.pth
 *.bin
 *.ckpt
 *.safetensors
 
-# Temporary files
+# Temporary
 *.tmp
 *.temp
