@@ -6,8 +6,8 @@ from pathlib import Path
 # CONFIG
 # =====================================================
 
-HUMAN_DIR = Path("data/human_annotations")
-WAV2VEC_DIR = Path("wav2vec2_outputs")
+HUMAN_DIR = Path("data/annotations")
+WAV2VEC_DIR = Path("outputs/alignments")
 
 THRESHOLD_MS = 90
 THRESHOLD_SEC = THRESHOLD_MS / 1000.0
@@ -186,16 +186,16 @@ summary = {
     "matching_words_evaluated": total_matching_words
 }
 
-with open("summary.json", "w", encoding="utf-8") as f:
+with open("outputs/comparison_reports/summary.json", "w", encoding="utf-8") as f:
     json.dump(summary, f, indent=4)
 
-with open("red_flag_files.csv", "w", newline="", encoding="utf-8") as f:
+with open("outputs/comparison_reports/flag_files.csv", "w", newline="", encoding="utf-8") as f:
     fieldnames = ["file", "reason", "human_words", "wav_words", "flagged_words", "total_words"]
     writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction="ignore")
     writer.writeheader()
     writer.writerows(red_flag_report)
 
-with open("word_level_errors.csv", "w", newline="", encoding="utf-8") as f:
+with open("outputs/comparison_reports/flag_words.csv", "w", newline="", encoding="utf-8") as f:
     fieldnames = ["file", "word_index", "human_word", "wav_word", "start_diff_ms", "end_diff_ms", "reason"]
     writer = csv.DictWriter(f, fieldnames=fieldnames)
     writer.writeheader()
